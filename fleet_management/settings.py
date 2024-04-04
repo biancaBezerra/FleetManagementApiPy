@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'fleet_management.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'fleet_management_api',
+        'USER': 'postgres',
+        'PASSWORD': '4401',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
